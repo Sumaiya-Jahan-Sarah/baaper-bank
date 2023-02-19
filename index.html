@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Baaper er Bank er Recap</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl  text-center">Functional <span class="text-red-600">Baap er Bank</span>!!!</h1>
+    </header>
+    <main>
+
+        <section class="w-3/4 mx-auto">
+            <div class="grid grid-cols-3  gap-4 my-12">
+                <div class="bg-yellow-400 py-8 px-4  rounded-xl text-white ">
+                    <h2 class="text-2xl">Deposit Amount</h2>
+                    <h4 class="text-3xl font-semibold">$<span id="deposit-total">00</span></h4>
+                </div>
+                <div class="bg-red-400 py-8 px-4 rounded-xl text-white ">
+                    <h2 class="text-2xl">Withdraw Amount</h2>
+                    <h4 class="text-3xl font-semibold">$<span id="withdraw-total">00</span></h4>
+                </div>
+                <div class="bg-blue-400 py-8 px-4 rounded-xl text-white ">
+                    <h2 class="text-2xl">Total Amount</h2>
+                    <h4 class="text-3xl font-semibold">$<span id="total-balance">1240</span></h4>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+        <section class="w-3/4 mx-auto">
+
+            <div class=" grid grid-cols-2 gap-4 ">
+                <div class=" text-white bg-amber-400 py-10 px-8 rounded-xl">
+                    <h3 class="text-2xl"> Your deposit amount</h3>
+                    <input type="text" name="" id="deposit-input" placeholder="please input your amount"
+                        class="text-black border border-amber-500 border-soild pr-12  pl-2 ">
+                    <br>
+                    <button type="" id="deposit-btn"
+                        class="submit rounded-xl bg-blue-400 hover:bg-blue-600 px-5 py-2 mt-2">Sumbit</button>
+                </div>
+
+
+                <div class=" text-white bg-rose-400 py-10 px-8 rounded-xl">
+                    <h3 class="text-2xl">Your withdraw amount</h3>
+                    <input type="text" name="" id="withdraw-input" placeholder="please input your amount"
+                        class="text-black border border-rose-500 border-soild pr-12  pl-2 ">
+                    <br>
+                    <button type="" id="withdraw-btn"
+                        class="submit rounded-xl bg-blue-400 hover:bg-blue-600 px-5 py-2 mt-2">Sumbit</button>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <script src="js/utilities.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
